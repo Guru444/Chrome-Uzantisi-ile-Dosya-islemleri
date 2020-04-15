@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery-1.11.1.min.js" ></script>
+  <script src="popup.js"></script>
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  <script data-main="scripts/main.js" src="scripts/require.js"></script>
+
+  </head>
+<div class="container">
+    <div class="notice notice-success">
+        <h3>Lütfen Dosyayı Seçiniz</h3>
+        <p>Önce bir dosya seçin, örneğin içinde herhangi bir metin bulunan bir metin dosyası</p>
+        <input type="file" id="myFile">
+        <p>Ardından dosyanın içeriğini okumak için Oku düğmesini tıklayın.</p>
+        <button id="tıklaLoad" onclick="loadFileAsText()">Dosyayı Oku</button><br />
+        <h3>Yüklenen dosyanın içeriği</h3>
+        <textarea rows="12" cols="40" id="inputTextToSave"></textarea> <br />
+        <p>Yukarıdaki metni değiştirebilir ve aşağıdaki düğmeyi kullanarak kaydedebilirsiniz.</p>
+        <h3>Dosya 'yı kaydet</h3>
+        <button id="tıklaSave" onclick="savefile()">Kaydet</button>
+        <p id="dlink">İndirme bağlantısı oluşturmak için kaydet düğmesine tıklayın.</p>
+
+    </div>
+</div>
+
+  
+  </html>

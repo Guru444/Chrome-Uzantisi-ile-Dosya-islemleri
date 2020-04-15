@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Dosya Düzenleyici",
+  "description": "Cihazınızda ki dosyalarınızı seçerek düzenleyebilirsiniz.",
+  "version": "1.0",
+
+  "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
+
+  
+  "options_page" : "popup.html",
+
+  "browser_action": {
+    "default_icon": "report.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions":[
+    "storage",
+    "contextMenus",
+    "notifications",
+    "tabs"
+  ],
+    
+  "icons": { "16": "report.png" ,
+    "48": "report.png",
+   "128": "report.png"}
+
+}
